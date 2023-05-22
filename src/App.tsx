@@ -1,11 +1,12 @@
-import PageContainer from "./modules/smartphoneUi/components/PageContainer/PageContainer";
+import Router from './modules/navigation/Router';
+import { BrowserRouter } from 'react-router-dom';
 
 function App() {
-  return (
-    <PageContainer
-      bottomNavProps={[{ icon: "@", name: "shalom", route: "/shalom" }]}
-    />
-  );
+    return (
+        <BrowserRouter>
+            <Router />
+        </BrowserRouter>
+    );
 }
 
 export default App;

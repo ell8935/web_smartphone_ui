@@ -1,5 +1,7 @@
 import styled from 'styled-components';
 
-const BackButtonStyled = styled.div``;
+const BackButtonStyled = styled.span`
+    cursor: pointer;
+`;
 
 export default BackButtonStyled;

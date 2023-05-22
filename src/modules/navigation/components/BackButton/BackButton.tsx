@@ -1,18 +1,14 @@
 import { IoArrowBack } from 'react-icons/io5';
+import BackButtonStyled from './BackButtonStyled';
 
 interface BackButtonProps {
     onClick: React.MouseEventHandler<HTMLSpanElement>;
 }
+
 const BackButton = ({ onClick }: BackButtonProps) => (
-    <span
-        onClick={onClick}
-        style={{
-            cursor: 'pointer',
-        }}
-    >
-        <IoArrowBack />
-        <i className="fa fa-icon" />
-    </span>
+    <BackButtonStyled onClick={onClick}>
+        <IoArrowBack fontSize={35} />
+    </BackButtonStyled>
 );
 
 export default BackButton;

@@ -10,6 +10,7 @@ interface TopNavProps {
     onBack?: () => void;
     logo?: string;
 }
+
 const TopNav = ({ hideBack = false, showLogo = false, title = null, onBack = undefined, logo }: TopNavProps) => {
     const navigate = useNavigate();
     const goBack = useCallback(() => {
@@ -19,7 +20,7 @@ const TopNav = ({ hideBack = false, showLogo = false, title = null, onBack = und
     return (
         <TopNavStyled>
             {!hideBack ? <BackButton onClick={goBack} /> : <div />}
-            {showLogo ? <img src={logo} alt="Zigmond" style={{ height: 24 }} /> : title ? <h3>{title}</h3> : <div />}
+            {showLogo ? <img src={logo} alt="Logo" style={{ height: 24 }} /> : title ? <h3>{title}</h3> : <div />}
         </TopNavStyled>
     );
 };

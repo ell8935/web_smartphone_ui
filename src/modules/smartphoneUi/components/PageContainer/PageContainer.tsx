@@ -39,11 +39,17 @@ const PageContainer = ({
 
     const { containerSx, contentSx } = usePageSizes();
 
+    const navProps = [
+        { icon: '@', name: 'home', route: '/home' },
+        { icon: '@', name: 'shalom', route: '/shalom' },
+        { icon: '@', name: 'motek', route: '/motek' },
+    ];
+
     return (
         <PageContainerStyled style={containerSx}>
             <TopNav />
             <div style={contentSx}>{children}</div>
-            <BottomNav tabsOptions={bottomNavProps} />
+            <BottomNav tabsOptions={navProps} />
         </PageContainerStyled>
     );
 };
