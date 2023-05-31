@@ -1,16 +1,8 @@
-// import MainScreen from './modules/main/screens/MainScreen';
-
-// function App() {
-//     return <MainScreen />;
-// }
-
-// export default App;
-
-import { pageContainerConfig } from './modules/main/screens/constants/pageContainerConfig';
-import PageContainerTest from './modules/smartphoneUi/components/PageContainer/PageContainerTest';
+import { smartphoneUiConfig } from './modules/constants/smartphoneUiConfig';
+import SmartphoneUi from './modules/smartphoneUi/components/PageContainer/SmartphoneUi';
 
 function App() {
-    return <PageContainerTest config={pageContainerConfig}></PageContainerTest>;
+    return <SmartphoneUi config={smartphoneUiConfig}></SmartphoneUi>;
 }
 
 export default App;

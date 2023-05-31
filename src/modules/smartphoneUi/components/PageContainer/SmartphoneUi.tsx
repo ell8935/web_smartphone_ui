@@ -9,7 +9,7 @@ interface PageContainerProps {
     config: any;
 }
 
-const PageContainerTest = ({ children, config }: PageContainerProps) => {
+const SmartphoneUi = ({ children, config }: PageContainerProps) => {
     const { containerSx, contentSx } = usePageSizes();
     const tabOptions = config.tabs;
 
@@ -24,4 +24,4 @@ const PageContainerTest = ({ children, config }: PageContainerProps) => {
     );
 };
 
-export default PageContainerTest;
+export default SmartphoneUi;

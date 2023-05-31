@@ -1,11 +1,11 @@
 import { Route } from 'react-router-dom';
-import { pageContainerConfig } from '../../main/screens/constants/pageContainerConfig';
 import { FunctionComponent } from 'react';
+import { smartphoneUiConfig } from '../../constants/smartphoneUiConfig';
 function getRoutesAndComponents() {
     const generalsRoutes: { [key: string]: FunctionComponent } = {};
     const homeRoute: { [key: string]: FunctionComponent } = {};
 
-    for (let tab of pageContainerConfig.tabs) {
+    for (let tab of smartphoneUiConfig.tabs) {
         const { route, screenComponent, homeScreen } = tab;
         if (homeScreen) {
             homeRoute['/'] = screenComponent;

@@ -1,7 +1,7 @@
-import Motek from '../../../test/components/Motek';
-import Shalom from '../../../test/components/Shalom';
+import Motek from '../test/components/Motek';
+import Shalom from '../test/components/Shalom';
 
-export const pageContainerConfig = {
+export const smartphoneUiConfig = {
     tabsOptions: {
         generalHeaderOptions: {
             hideHeader: false,
