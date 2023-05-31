@@ -2,7 +2,7 @@ import { BrowserRouter } from 'react-router-dom';
 import Router from '../../../navigation/Router';
 import { usePageSizes } from '../../hooks/usePageSizes';
 import BottomNav from '../BottomNav/BottomNav';
-import PageContainerStyled from './PageContainerStyled';
+import SmartphoneUiStyled from './SmartphoneUiStyled';
 
 interface PageContainerProps {
     children?: React.ReactNode;
@@ -14,13 +14,13 @@ const SmartphoneUi = ({ children, config }: PageContainerProps) => {
     const tabOptions = config.tabs;
 
     return (
-        <PageContainerStyled style={containerSx}>
+        <SmartphoneUiStyled style={containerSx}>
             <BrowserRouter>
                 <Router />
                 <div style={contentSx}>{children}</div>
                 <BottomNav tabsOptions={tabOptions} />
             </BrowserRouter>
-        </PageContainerStyled>
+        </SmartphoneUiStyled>
     );
 };
 
